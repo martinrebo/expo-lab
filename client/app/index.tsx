@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import { Text, View } from "react-native";
 import { useRouter } from 'expo-router';
 import { Button } from 'react-native';
+import { useAuth } from "@/context/auth";
 
 export default function Index() {
   const [data, setData] = useState<any>(null);
   const router = useRouter();
+  const { user, signIn, signOut, isLoading, error } = useAuth();
 
   useEffect(() => {
     axios.get("http://localhost:3000")
@@ -32,6 +34,13 @@ export default function Index() {
       ) : (
         <Text>Loading...</Text>
       )}
+      <View style={{ marginTop: 20 }}>
+        <Text>User: {user ? JSON.stringify(user) : "Not logged in"}</Text>
+        <Button
+          title={user ? "Sign Out" : "Sign In"}
+          onPress={user ? signOut : signIn}
+        />
+        </View>
       <View style={{ marginTop: 20 }}>
         <View style={{ marginBottom: 10 }}>
           <Button

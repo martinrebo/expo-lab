@@ -1,7 +1,14 @@
-# expo-lab
+# expo-lab Logger
 Software lab for Expo App
 
 Logger
+## 23/6/2025
+- [ ] 🚧 (wip) PR expo-lab 7-add-basic-auth
+
+Resources
+- #expo-auth: Expo API routes: [What are expo API routes?](https://docs.expo.dev/router/reference/api-routes/)
+- #expo-auth: Google Sign in [Youtube expo tutorial 2025](https://www.youtube.com/watch?v=V2YdhR1hVNw)
+
 ## 30/4/2025
 - Install express 5 
 

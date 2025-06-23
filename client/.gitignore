@@ -1,5 +1,6 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
+
 # dependencies
 node_modules/
 
@@ -32,6 +33,9 @@ yarn-error.*
 
 # local env files
 .env*.local
+
+# secrets
+secrets/
 
 # typescript
 *.tsbuildinfo
