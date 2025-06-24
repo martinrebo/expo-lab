@@ -1,7 +1,12 @@
 # expo-lab Logger
 Software lab for Expo App
 
-Logger
+## 24/6/2026
+
+TODO:
+
+- [ ] 🚧 (wip) PR expo-lab 7-add-basic-auth
+
 ## 23/6/2025
 - [ ] 🚧 (wip) PR expo-lab 7-add-basic-auth
 
